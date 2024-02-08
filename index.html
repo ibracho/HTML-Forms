@@ -8,21 +8,50 @@
   <body>
     <header><h1>Isabel's Form</h1></header>
     <main>
+      <aside style="float: right">
+        <h3>Additional Inputs</h3>
+        <input type="color" /><br />
+        <input type="date" /><br />
+        <input type="file" multiple /><br />
+        <input type="hidden" /><br />
+        <input type="number" /><br />
+        <input type="password" /><br />
+        <input type="search" /><br />
+        <input type="tel" /><br />
+      </aside>
       <form action="mailto:isabelgbracho@outlook.com">
         <div>
           <label for="yourName">What is your name?</label>
+          <input id="yourName" type="text" placeholder="Jane Doe" />
+        </div>
+
+        <div>
+          <label for="yourEmail">What is your Email?</label>
           <input
-            id="yourName"
-            type="text"
-            name="yourName"
-            placeholder="Jane Doe"
+            id="yourEmail"
+            type="email"
+            name="cc"
+            placeholder="email@domain.com"
           />
         </div>
         <div>
-          <input type="submit" value="Submit Button Text" />
+          <label for="subject-select">How may I help you?</label>
+          <select id="subject-select" name="subject">
+            <option value="">Select an option below</option>
+            <option value="Web_Development_Inquiry">Build a Website</option>
+            <option value="Coding Lesson Inquiry">Teach How to Code</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="yourMessage">Tell Me More</label>
+          <textarea id="yourMessage" name="body"></textarea>
+        </div>
+
+        <div>
+          <input type="submit" value="Contact Me" />
         </div>
       </form>
-      <aside style="float: right"></aside>
     </main>
     <footer>Built by <a href="https://github.com/ibracho">Isabel B</a></footer>
   </body>
